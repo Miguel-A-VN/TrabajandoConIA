@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat AI con Gemini y OpenRouter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+    .response {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    .loader {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>ResumidoriA</h1>
+  <form id="chat-form">
+    <label for="inputText">Ingresa tu mensaje:</label><br />
+    <textarea id="inputText" required></textarea><br />
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="loader" class="loader">Cargando...</div>
+
+  <h2>Respuestas:</h2>
+  <h2>Gemini</h2>
+  <div id="response-gemini" class="response"></div>
+  <h2>Gemma</h2>
+  <div id="response-gemma" class="response"></div>
+  <h2>Mistral</h2>
+  <div id="response-mistral" class="response"></div>
+  <h2>DeepSeek</h2>
+  <div id="response-deepseek" class="response"></div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

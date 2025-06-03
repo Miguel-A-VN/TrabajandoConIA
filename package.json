@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@google/genai": "^1.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "name": "resumidoria",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js --watch app.js --watch routes/ --watch controllers/ --watch models/ --watch config/ --watch middlewares/ --watch utils/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
